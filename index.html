@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Library</h1>
+        <hr>
+    </div>
+    
+    <div class="bookSection">
+        <button class="toggleDialog">New Book</button>
+        
+        <div class="bookGrid">
+
+        </div>
+    </div>
+</body>
+<dialog id="bookFormDialog">
+    <p>New Book</p>
+    <form method="dialog" id="bookForm">
+        <ul>
+            <li>
+                <label for="book_title">Book Title</label>
+                <input type="text" id="book_title" placeholder="Title" required>
+            </li>
+            <li>
+                <label for="author">Author</label>
+                <input type="text" id="author" default="Author" placeholder="Author" required>
+            </li>
+            <li>
+                <label for="length">Book Length</label>
+                <input type="number" id="length" placeholder="Length" required>
+            </li>
+            <li>
+                <div>
+                    <label for="readStatus">Have You Read It?</label>
+                    <input type="checkbox" id="readStatus">
+                </div>
+            </li>
+            <li>
+                <button>Submit</button>
+            </li>
+        </ul>
+        
+    </form>
+</dialog>
+
+</html>
