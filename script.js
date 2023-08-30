@@ -40,17 +40,12 @@ dialogButton.addEventListener("click", () => {
 
 const myLibrary = [];
 
-function Book(title, author, numPages, read) {
-    this.title = title;
-    this.author = author;
-    this.numPages = numPages;
-    this.read = read;
-
-    this.info = function() {
-        if (read)
-            return(`${title} by ${author}, ${numPages} pages, read`);
-        else 
-            return(`${title} by ${author}, ${numPages} pages, not read yet`);
+class Book {
+    constructor(title, author, numPages, read) {
+        this.title = title;
+        this.author = author;
+        this.numPages = numPages;
+        this.read = read;
     }
 }
 
